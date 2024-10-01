@@ -1048,19 +1048,19 @@ function newVillagers() {
   document.getElementById("villager2").children[1].innerHTML = villagerNames[villagerId2];
 }
 
-/*function getCounter() {
+function getCounter() {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange=function() {
     if (this.readyState==4 && this.status==200) {
       document.getElementById("counter").innerHTML = this.responseText;
     }
   }
-  xmlhttp.open("GET","https://poll.thomasgamedocs.com/getCounter.php",true);
+  xmlhttp.open("GET","getCounter.php",true);
   xmlhttp.send();
-}*/
+}
 
 newVillagers();
-/*getCounter();*/
+getCounter();
 
 
 function recordWin(winner) {
@@ -1075,8 +1075,10 @@ function recordWin(winner) {
       losingVillager = villagerId1;
     }
 
-    /*
-    var xmlhttp = new XMLHttpRequest();
+    getCounter();
+
+
+    /*var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange=function() {
       if (this.readyState==4 && this.status==200) {
         document.getElementById("counter").innerHTML = this.responseText;
