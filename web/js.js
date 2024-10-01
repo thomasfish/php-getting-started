@@ -1083,7 +1083,7 @@ function recordWin(winner) {
         document.getElementById("counter").innerHTML = this.responseText;
       }
     }
-    xmlhttp.open("POST","saveResults.php",true);
+    xmlhttp.open("POST","saveResults.php", true);
     xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xmlhttp.send("winner=" + winningVillager + "&loser=" + losingVillager);
 
