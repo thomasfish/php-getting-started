@@ -21,7 +21,7 @@ while (!@mkdir("textfiles/counter.txt.lock")) {
 }
 file_put_contents("textfiles/counter.txt", $countervalue);
 rmdir("textfiles/counter.txt.lock");
-echo $countervalue;
+echo "hello";
 
 /*
 
