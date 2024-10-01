@@ -1085,7 +1085,7 @@ function recordWin(winner) {
     }
     xmlhttp.open("POST","saveResults.php",true);
     xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    xmlhttp.send("winner=" + winningVillager + "&loser=" + losingVillager);*/
+    xmlhttp.send("winner=" + winningVillager + "&loser=" + losingVillager);
 
     newVillagers();
 }
