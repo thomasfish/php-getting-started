@@ -1,6 +1,5 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-header('Cache-Control: no-cache');
 
 $winner = $_POST['winner'];
 $loser = $_POST['loser'];
